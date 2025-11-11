@@ -34,50 +34,63 @@
   }
   ```
 
-````
-
 - **Keep it reusable:** Write selectors you can reuse.
 
-    ```css
-    /* ✅ Reusable utility */
-    .text-center { text-align: center; }
+  ```css
+  /* ✅ Reusable utility */
+  .text-center {
+    text-align: center;
+  }
 
-    /* ❌ Hard to reuse */
-    .header-title { text-align: center; }
-    ```
+  /* ❌ Hard to reuse */
+  .header-title {
+    text-align: center;
+  }
+  ```
 
 - **Avoid deep nesting:** Too much nesting increases specificity and complexity.
 
-    ```css
-    /* ✅ Simple */
-    .card-title { font-size: 1.2rem; }
+  ```css
+  /* ✅ Simple */
+  .card-title {
+    font-size: 1.2rem;
+  }
 
-    /* ❌ Overly nested */
-    .container .content .card .card-header .card-title { font-size: 1.2rem; }
-    ```
+  /* ❌ Overly nested */
+  .container .content .card .card-header .card-title {
+    font-size: 1.2rem;
+  }
+  ```
 
 - **Don’t over-qualify selectors:** Avoid things like `div.card`.
 
-    ```css
-    /* ✅ Just use the class */
-    .card { padding: 1rem; }
+  ```css
+  /* ✅ Just use the class */
+  .card {
+    padding: 1rem;
+  }
 
-    /* ❌ Too specific */
-    div.card { padding: 1rem; }
-    ```
+  /* ❌ Too specific */
+  div.card {
+    padding: 1rem;
+  }
+  ```
 
 - **Keep it short and simple:** Simple selectors = better performance.
 
-    ```css
-    .btn-primary { background: royalblue; color: white; }
-    ```
-
+  ```css
+  .btn-primary {
+    background: royalblue;
+    color: white;
+  }
+  ```
 
 ---
 
 ## 🌱 CSS Goals
 
 CSS should help you:
+
 - Maintain **consistency**
 - **Adapt easily** to changes
 - **Scale** as your project grows
@@ -99,7 +112,7 @@ body {
 button {
   background: var(--main-color);
 }
-````
+```
 
 > Change `--main-color` once, and it updates everywhere!
 

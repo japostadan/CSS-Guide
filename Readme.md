@@ -92,7 +92,3 @@ Feel free to use, modify, and share with proper attribution.
 ---
 
 > ✨ _“Good code is like good writing — clear, purposeful, and easy to understand.”_
-
-```
-
-```
